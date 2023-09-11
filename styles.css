@@ -106,7 +106,7 @@ input[type="search"] {
   gap: 20px;
 }
 
-h2 {
+.greeting h2 {
   min-width: max-content;
 }
 
@@ -138,6 +138,7 @@ h2 {
   display: grid;
   grid-template: repeat(3, 1fr) / repeat(2, 1fr);
   gap: 20px;
+  padding-right: 20px;
 }
 
 .project {
@@ -152,6 +153,25 @@ h2 {
   color: rgb(63, 63, 63);
 }
 
-h3 {
+.project h3 {
   padding-bottom: 10px;
+}
+
+.announcements {
+  display: flex;
+  flex-direction: column;
+  border: 25px solid white;
+  border-width: 0px 25px;
+  border-radius: 10px;
+  background-color: white;
+  justify-content: space-evenly;
+}
+
+.announcement {
+  padding: 15px 10px;
+}
+
+.divider {
+  background-color: rgb(217, 217, 217);
+  height: 2px;
 }
