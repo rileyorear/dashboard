@@ -1,10 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
 * {
   margin: 0px;
   padding: 0px;
 }
 
 body {
-  font-family: monospace;
+  font-family: Roboto;
+}
+
+img {
+  height: 25px;
 }
 
 .container {
@@ -16,13 +22,87 @@ body {
 .menu {
   background-color: rgb(0, 195, 255);
   grid-area: 1 / 1 / 3 / 2;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 30px 0 0 30px;
+  font-size: 1.75em;
+  font-weight: bold;
+  color: white;
+}
+
+.menu-section1, .menu-section2 {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.title {
+  font-size: 2.5rem;
 }
 
 .header {
   grid-column: 2 / 3;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  padding-left: 20px;
+}
+
+.top-header {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+  
+}
+
+.left-top-header {
+  
+}
+
+form {
+  display: flex;
+  gap: 15px;
+}
+
+button {
+  background-color: white;
+  border: 0 solid white;  
+}
+
+input[type="search"] {
+  background-color: #eeeeee;
+  border: 1px solid white;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 700px;
+  min-width: 150px;
+  font-size: 14px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.right-top-header {
+  justify-self: end;
+  padding: 0 35px 0 35px;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  flex-wrap: nowrap;
+}
+
+.profile-name {
+  font-weight: bold;
+  font-size: 1.1rem;
+  
+}
+
+.frog {
+  height: 3.5rem;
+  border-radius: 50%;
 }
 
 .content {
-  background-color: lightgray;
+  background-color: #eeeeee;
   grid-area: 2 / 2 / 3 / 3;
+  box-shadow: inset 0 8px 20px 0px rgba(0, 0, 0, 0.05);
 }
