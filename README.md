@@ -1,2 +1,2 @@
 # dashboard
-Dashboard created using css grid.
+Dashboard created using css grid and some flexbox.
